@@ -334,3 +334,12 @@ if ( ! function_exists( 'assembler_remove_upsells' ) ) :
 endif;
 
 add_action( 'init', 'assembler_remove_upsells' );
+
+
+// Integrar Mini Ju (Easy-Peasy AI chatbot)
+function agregar_chatbot_tecnoju() {
+    ?>
+    <iframe src="https://bots.easy-peasy.ai/bot/30f82f55-e4e5-41e4-8e89-33abfb3c959b?mode=embedded" width="100%" height="500px" style="border:none; position:fixed; bottom:20px; right:20px; z-index:999999; max-width:400px; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></iframe>
+    <?php
+}
+add_action('wp_footer', 'agregar_chatbot_tecnoju');
